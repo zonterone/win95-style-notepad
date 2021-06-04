@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 320px;
+  margin: 0;
+
+  color: #000;
+  background-color: #35a8a8;
+
+  font: 16px/1.5 "Main-Font", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pad-window {
+  width: 70vw;
+  min-width: 400px;
+  height: 70vh;
+  min-height: 300px;
+  margin: 50px 0 0 0;
+
+  border: 5px ridge #c1c6c9;
+  background-color: #ffffff;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0 0 0 25px;
+
+  color: white;
+  background-color: #001fa2;
+  background-image: url(../img/artage-io-48140_1601639087.png);
+  background-repeat: no-repeat;
+  background-position: left 5px center;
+  background-size: 17px;
+
+  font-size: 16px;
+}
+
+.header__control {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  height: 25px;
+
+  background-color: #c1c6c9;
+}
+
+.control__item {
+  height: 90%;
+  margin: 4px 5px 0;
+}
+.control__button {
+  display: block;
+
+  height: 100%;
+  padding: 0 5px;
+
+  border: none;
+  outline: none;
+  background-color: #c1c6c9;
+}
+
+.control__button::first-letter {
+  text-decoration: underline;
+}
+
+.control__item:focus,
+.control__item:hover {
+  outline: 1px inset black;
+}
+.control__item:active,
+.control__button:active {
+  transform: scale(0.95);
+
+  background-color: #a8a8a8;
+}
+
+.pad-window__body {
+  padding: 10px;
+
+  border-top: 7px ridge #c1c6c9;
+  outline: none;
+}
+
+.text-select__container {
+  position: absolute;
+
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 300px;
+  height: 100px;
+
+  border: 5px ridge #c1c6c9;
+  background-color: #c1c6c9;
+}
+
+.text-select {
+  width: 80%;
+  margin: 0 0 10px 0;
+}
+
+.text-select__title {
+
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0 0 0 5px;
+
+  color: white;
+  background-color: #001fa2;
+
+  font-size: 14px;
+}

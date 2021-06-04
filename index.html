@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notepad Win95</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/artage-io-48140_1601639087.png" type="image/x-icon">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="pad-window">
+    <div class="pad-window__header header">
+      <h1 class="header__title">Notepad Win95</h1>
+      <ul class="header__control control">
+        <li class="control__item">
+          <button class="control__button" id="edit">Редактировать</button>
+        </li>
+        <li class="control__item">
+          <button class="control__button" id="save" disabled>Сохранить</button>
+        </li>
+        <li class="control__item">
+          <button class="control__button" id="cancel" disabled>Отмена</button>
+        </li>
+      </ul>
+    </div>
+    <div class="pad-window__body" id="textArea">
+    </div>
+  </div>
+  <div class="text-select__container">
+    <h2 class="text-select__title">Выберите версию документа</h2>
+    <select class="text-select">
+    </select>
+    <div class="text-select__btn-container btn-container">
+      <button id="btn-container__cancel">Отмена</button>
+      <button id="btn-container__submit">Подтвердить</button>
+    </div>
+  </div>
+</body>
+
+</html>
